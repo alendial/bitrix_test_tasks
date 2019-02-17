@@ -1,0 +1,38 @@
+.header{}
+.header{background-color: #1B1918; height: 40px;}
+.header .menu{line-height: 1;}
+.header .menu li{display: inline-block;}
+.header .menu li + li{margin-left: 25px;}
+.header .menu a{display: block; font-size: 11px; text-transform: uppercase; font-weight: 800; color: #fff; padding: 14px 0;}
+
+.product-list .item{padding: 20px 20px; border: 1px #bbb solid; margin-bottom: 10px;}
+
+@media (min-width: 1200px){
+	.container {max-width: 1312px;}
+}
+
+
+/* большие устройства <1601px*/
+@media (min-width: 1600px) {
+	/* .container{width: 1328px;} */
+}
+
+/*md средние устройства <1200px (настольные пк, ноутбуки, горизонтальный ipad)*/
+@media (max-width: 1199px) { 
+	
+}
+
+/*sm малые устройства <992px (планшеты и тд, вертикальный ipad)*/
+@media (max-width: 991px) {
+
+}
+
+/*xs маленькие устройства (телефоны и тд)*/	
+@media (max-width: 767px) {
+
+}
+
+/*очень маленькие устройства (телефоны и тд)*/	
+@media (max-width: 480px) {
+	
+}

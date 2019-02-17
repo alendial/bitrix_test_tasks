@@ -1,0 +1,98 @@
+html{width: 100%; height: 100%;	}
+body{width: 100%; min-height:100%; font-size: 16px; line-height: normal; line-height: 1.5; color:#000; background-color: #fff; overflow-x: hidden; position: relative; font-weight: 400;}
+
+.clear{clear:both; display: table;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+
+.float-right{float: right;}
+.float-left{float: left;}
+
+.stretch-w{width: 100%;}
+.stretch-h{height: 100%;}
+
+.hidden-block{display: none;}
+
+/*ul{padding: 0; margin: 0; list-style: none;}*/
+img{max-width: 100%;}
+button{border:none;}
+
+.anchor{position: absolute; margin-top: -0px;}
+
+.h0{font-size: 48px; font-weight: 700;}
+.h1{font-size: 32px; font-weight: 700;}
+.h2{font-size: 24px; font-weight: 700;}
+.h3{font-size: 18px; font-weight: 700;}
+.h4{font-size: 16px; font-weight: 700;}
+
+
+ul.stylized{list-style: none;}
+ul.stylized li{color: #0d2338; font-weight: 300; margin-bottom: 10px; padding-left: 20px; position: relative;}
+ul.stylized li::before{content:''; display: inline-block; position: absolute; left: 0; top: 12px; width: 10px; height: 1px; background-color: #1C4BFC;}
+
+/*a, a:hover{color: #D62127;}*/
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+form{transition: opacity 0.3s;}
+form.wait{cursor: wait; opacity: 0.6;}
+
+.modal{width: 100%; height: 0; position: fixed; top: 0; left: 0; z-index: 100; line-height: 1.2; overflow: hidden; display: block; transition:0s 0.6s;}
+.modal.active{height: 100%; transition:0s 0s;}
+.modal .close-background{width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-color: rgba(0, 0, 0, .5); opacity: 0; transition: 0.6s;}
+.modal.active .close-background{opacity: 1;}
+.modal .modal-block{width: 540px; padding: 40px 48px; max-width:90%; position: absolute; top: -100%; right: 0; left: 0; background: #fff; background: #fffd; overflow: hidden; transition: 0.3s; margin: auto;}
+.modal.active .modal-block{top: 25%; transition: 0.6s;}
+.modal .close-link{position: absolute; display: block; right: 24px; top: 32px; cursor: pointer; z-index:1; transition:all 0.15s; line-height: 1; width: 22px; height: 22px; opacity: 0.9; border: 1px #E9B4B5 solid; border-radius: 2px;}
+.modal .close-link::before, .modal .close-link::after{content:''; display: block; position: absolute; top: 9px; width: 16px; height: 1px; background-color: #D62127;}
+.modal .close-link::before{transform: rotate(45deg); left: 2px;}
+.modal .close-link::after{transform: rotate(-45deg); left: 2px;}
+.modal .close-link:hover{opacity: 1; border-color: #D62127;}
+.modal .head{font-size: 32px; color: #000; margin-bottom: 15px;}
+
+.form .form-group{margin-bottom: 32px;}
+.form .form-control{border: none; border: 1px solid #dde4eb; padding: 10px 16px; border-radius: 0; font-size: 12px; line-height: 1; height: auto; color: #000; box-shadow: none !important; font-weight: 400; resize: none;  text-transform: uppercase;}
+.form textarea.form-control{padding: 14px 16px; }
+.form .form-control:focus{border-color: #2176DE;}
+.form .form-control.error{border-color: #FF0000;}
+.form .confirm-label{vertical-align: middle; margin-left: 5px; font-weight: normal; display: block;}
+.form .success{display: none;}
+.form p{color: #333; font-size: 16px;}
+.form a{color: #D62127; text-decoration: underline;}
+.form a:hover{text-decoration: none;}
+input[type=checkbox], input[type=radio]{float: left; margin-right: 8px;}
+
+.hamburger{display: block; width: 24px; height: 16px; position: relative; margin: 0; vertical-align: middle;}
+.hamburger::before{content:''; position: absolute; top: 8px; left: 0; display: block; width: 16px; height: 2px; background-color: #20448F; transition: all 0.3s;}
+.hamburger span::before{content:''; position: absolute; top: 3px; left: 0; display: block; width: 16px; height: 2px; background-color: #20448F; transition: all 0.3s;}
+.hamburger span::after{content:''; position: absolute; top: 13px; left: 0; display: block; width: 8px; height: 2px; background-color: #20448F; transition: all 0.3s;}
+.hamburger.active::before{background-color: transparent !important;}
+.hamburger.active span::before{transform: rotate(40deg); top: 8px !important; left: 0px !important;}
+.hamburger.active span::after{transform: rotate(-40deg); top: 8px !important; left: 0px !important; width: 16px;}
+
+
+/* большие устройства <1601px*/
+@media (min-width: 1600px) {
+	/* .container{width: 1328px;} */
+}
+
+/*md средние устройства <1200px (настольные пк, ноутбуки, горизонтальный ipad)*/
+@media (max-width: 1199px) { 
+	
+}
+
+/*sm малые устройства <992px (планшеты и тд, вертикальный ipad)*/
+@media (max-width: 991px) {
+
+}
+
+/*xs маленькие устройства (телефоны и тд)*/	
+@media (max-width: 767px) {
+
+}
+
+/*очень маленькие устройства (телефоны и тд)*/	
+@media (max-width: 480px) {
+	
+}
